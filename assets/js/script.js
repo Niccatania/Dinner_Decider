@@ -8,6 +8,17 @@ var foodAPIUrl = "https://api.spoonacular.com/recipes/complexSearch";
 var searchHistory = localStorage.getItem("searchHistory");
 var firstLoad = true;
 console.log(searchHistory);
+
+
+var backClass = document.querySelector(".backClass");
+window.addEventListener("scroll", function() {
+  var yPos = -window.pageYOffset / 4; /* adjust the 4 to change the speed of the effect */
+  backClass.style.backgroundPosition = "center " + yPos + "px";
+});
+
+
+
+
 if (!searchHistory) {
     console.log("no search history, initializing empty array");
     localStorage.setItem("searchHistory", JSON.stringify([]));
@@ -105,6 +116,9 @@ function getRecipe(){
     console.log(userRecipeInput);
     fetchURL(userRecipeInput);
     document.getElementById("searchInput").value = "";
+
+    var element = document.getElementById("hideId");
+    element.classList.remove("hide");
 }
 
 function getIngredients(){
@@ -119,6 +133,10 @@ function getIngredients(){
     
     fetchURL(arr);
     document.getElementById("ingredientsSearchbar").value = "";
+
+
+    var element = document.getElementById("hideId");
+    element.classList.remove("hide");
 
 }
 

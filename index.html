@@ -5,49 +5,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="./assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fredoka+One&family=Inter&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dinner Decider</title>
 </head>
 <body>
-   
-<header>
-    <h1 class="is-size-1 py-2 px-2">Dinner Decider</h1>
-    <h2 class="is-size-5 ">Welcome to Dinner Decider! We do all the hard work of deciding on a meal to cook, so you can get back to your busy life. Just follow the steps below and you'll be on your way to making a fabulous meal!!</h2>
-  </header>
+ 
+  <!-- <nav class="navbar" style="background-color: #973e3e;">
+  <span class="navbar-brand mb-0 h1">Dinner Decider</span>
+</nav> -->
+<!-- 
+<h1 class="visually-hidden">Heroes examples</h1> -->
+
+<div class="px-4 py-5 my-5 text-center backClass">
+  <h1 class="display-5 fw-bold">Dinner Decider</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">Welcome to Dinner Decider! We do all the hard work of deciding on a meal to cook, so you can get back to your busy life.</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+      <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Search By Recipe</button>
+     
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
   <div id = "cards"class="columns">
 
     <div class="card column m-2" id="card">
       <div class="card-content">
         <div class="content">
+          <div class="card">
+            <h5 class="card-header">Search By Recipe Name</h5>
+            <div class="card-body">
           <p>If you already know what you want to make, type in the name here.</p>
           <section class="has-text-centered">
             <input id="searchInput" class="py-1 px-1 my-1 mx-1"></input>
-            <button onClick= "getRecipe()" class="button is-success" href=#recipe-column >Submit</button>
+            <button onClick= "getRecipe()" class="button btn btn-primary btn-lg px-4 gap-3 inputClass2" href=#recipe-column >Submit</button>
           </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="card column m-2" id="card">
+      <div class="card-content">
+        <div class="content">
+          <div class="card">
+            <h5 class="card-header">Search By Ingredients</h5>
+            <div class="card-body">
+          <p>If you have ingredients, but no idea what to make, input a list of what you have and we'll find something that works for you.</p>
+          <section class="has-text-centered">
+            <input id=ingredientsSearchbar class="py-1 px-1 my-1 mx-1" placeholder="ex. eggs, corn, cheese"></input>
+            <button onClick=  "getIngredients()" class="button is-success inputClass" href=#recipe-column>Submit</button>
+            </section>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="card column m-2" id="card">
-      <div class="card-content">
-        <div class="content">
-          <p>If you have a fridge full of ingredients, but no idea what to make, you can input a list of what you have and we'll find something that works for you.</p>
-
-          <section class="has-text-centered">
-          <input id=ingredientsSearchbar class="py-1 px-1 my-1 mx-1" placeholder="ex. eggs, corn, cheese"></input>
-          <button onClick=  "getIngredients()" class="button is-success" href=#recipe-column>Submit</button>
-          </section>
-        </div>
-      </div>
-    </div>
-
-    <div class="card column m-2 id="card">
 
       <div class="card-content">
         <p>Here you can choose from a list of allergens to be excluded from your recipe.</p>
         <section class="has-text-centered">
-          <button id="allergy-modal" class="js-modal-trigger button is-danger" data-target="modal-js-example">Add Allergies</button>
+          <button id="allergy-modal" class="js-modal-trigger button btn btn-primary btn-lg px-4 gap-3" data-target="modal-js-example">Add Allergies</button>
         </section>
         <div class="column">
           <div id="allergy-modal" class="modal">
@@ -94,7 +132,8 @@
     </div>
   </div>
 
-  <div class="columns">
+<div id ="hideId" class="hide">
+  <div class="columns ">
         <div class="column is-narrow" >
           <div class="box" style="width: 250px;">
             <p class="title is-5">Recipe, and ingredients</p>
@@ -111,6 +150,7 @@
       </div>
     
   </div>
+</div>
 
 
     <script src="./assets/js/script.js"></script>

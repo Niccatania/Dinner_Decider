@@ -1,5 +1,23 @@
+/* 
+
+font-family: 'Cookie', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Inter', sans-serif; */
+
+.backClass{
+    background-image: url("https://hips.hearstapps.com/delish/assets/17/22/1496173854-gettyimages-520781269-1.jpg");   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    color: rgb(24, 24, 75);
+    height: 75vh; /* set the height of the element to the viewport height */
+  }
+  
+
 body {
-    background-image: url("./images/283-2833111_cute-food-wallpapers-cute-wallpaper-desktop-food.jpg");
+    font-family: 'Fredoka One', cursive;
+    color: rgb(33, 33, 52);
+    /* background-image: url("./images/283-2833111_cute-food-wallpapers-cute-wallpaper-desktop-food.jpg"); */
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
@@ -7,13 +25,13 @@ body {
 
 h1 {
     font-weight: bold;
-    font-family: fantasy;
+    font-family: 'Fredoka One', cursive;
     text-align: center;
     content: 4px;
     padding: 4px;
     margin: 2px;
-    background: linear-gradient(rgb(104, 46, 46), rgba(255, 255, 255, 0.883));
-    color: rgb(77, 5, 7);
+    /* background: linear-gradient(rgb(104, 46, 46), rgba(255, 255, 255, 0.883));
+    color: rgb(77, 5, 7); */
 }
 
 h2 {
@@ -24,8 +42,8 @@ h2 {
     content: 4px;
     padding: 4px;
     margin: 2px;
-    background: linear-gradient(rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.398));
-    color:rgb(77, 5, 7);
+    /* background: linear-gradient(rgba(255, 255, 255, 0.849), rgba(255, 255, 255, 0.398));
+    color:rgb(77, 5, 7); */
 }
 
 p {
@@ -40,3 +58,12 @@ p {
 .checkbox {
     font-weight: bold;
 }
+
+.headerClass{
+    margin-top: 100px;
+}
+
+.hide {
+    display: none;
+  }
+  
