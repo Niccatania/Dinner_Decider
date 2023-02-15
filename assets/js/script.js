@@ -12,7 +12,7 @@ console.log(searchHistory);
 
 var backClass = document.querySelector(".backClass");
 window.addEventListener("scroll", function() {
-  var yPos = -window.pageYOffset / 4; /* adjust the 4 to change the speed of the effect */
+  var yPos = -window.pageYOffset / 3; /* adjust the 3 to change the speed of the effect */
   backClass.style.backgroundPosition = "center " + yPos + "px";
 });
 

@@ -10,7 +10,11 @@ font-family: 'Inter', sans-serif; */
     background-repeat: no-repeat;
     background-size: cover;  
     color: rgb(24, 24, 75);
-    height: 75vh; /* set the height of the element to the viewport height */
+    height: 100vh; /* set the height of the element to the viewport height */
+  }
+
+  a:link {
+    text-decoration: none;
   }
   
 
