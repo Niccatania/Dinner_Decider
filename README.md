@@ -5,7 +5,7 @@ A web application that allows the user to search for a recipe by name or ingredi
 This projects goal was to create an application that solves a real world problem. Our group decided to help provide some extra time to a user by making it easy for them to find a recipe. We did this using HTML, CSS, Javascript, API's, and the CSS framework Bulma. This application features search by name, search by ingredient, and a modal that lets the user select any allergy they may have.
  
 # Deployed Application link
-https://owenmg.github.io/Dinner_Decider/
+https://niccatania.github.io/Dinner_Decider/
  
 # Technologies Used
 -Spoonacular API
